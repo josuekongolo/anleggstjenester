@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tjenester fra Anleggstjenester AS - Graving, veiarbeid, drenering, planering, VA-arbeid, massetransport og snøbrøyting i Melhus og Gauldalen.">
+    <meta name="keywords" content="graving melhus, veiarbeid hølonda, drenering gauldalen, planering trøndelag, skogsbilvei, massetransport">
+    <meta name="author" content="Anleggstjenester AS">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌲</text></svg>">
+
+    <title>Tjenester | Anleggstjenester AS</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="logo">
+                    <div class="logo__icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 21h16v-2H4v2zm0-4h16v-2H4v2zm0-6h10V5c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v6zm12-6h2l4 4v6h-2v-5l-3-3h-1V5z"/>
+                        </svg>
+                    </div>
+                    <span class="logo__text">Anleggstjenester<span>Grunnarbeid i Melhus</span></span>
+                </a>
+
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="index.html" class="nav__link">Hjem</a></li>
+                        <li><a href="tjenester.html" class="nav__link nav__link--active">Tjenester</a></li>
+                        <li><a href="omrader.html" class="nav__link">Områder</a></li>
+                        <li><a href="om-oss.html" class="nav__link">Om oss</a></li>
+                        <li><a href="kontakt.html" class="nav__link">Kontakt</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header__actions">
+                    <a href="tel:+4790000000" class="header__phone">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        900 00 000
+                    </a>
+                    <a href="kontakt.html" class="btn btn--primary header__cta">Få tilbud</a>
+                </div>
+
+                <button class="menu-toggle" aria-label="Meny">
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__item"><a href="index.html" class="mobile-menu__link">Hjem</a></li>
+            <li class="mobile-menu__item"><a href="tjenester.html" class="mobile-menu__link">Tjenester</a></li>
+            <li class="mobile-menu__item"><a href="omrader.html" class="mobile-menu__link">Områder</a></li>
+            <li class="mobile-menu__item"><a href="om-oss.html" class="mobile-menu__link">Om oss</a></li>
+            <li class="mobile-menu__item"><a href="kontakt.html" class="mobile-menu__link">Kontakt</a></li>
+        </ul>
+        <a href="tel:+4790000000" class="mobile-menu__phone">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            Ring oss: 900 00 000
+        </a>
+        <a href="kontakt.html" class="btn btn--primary">Få tilbud</a>
+    </div>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-hero__title fade-in">Tjenester</h1>
+            <p class="page-hero__subtitle fade-in">Vi utfører et bredt spekter av anleggsarbeid – fra små private prosjekter til større oppdrag for landbruk og næring</p>
+        </div>
+        <div class="page-hero__pattern"></div>
+    </section>
+
+    <!-- Service: Graving -->
+    <section class="service-detail">
+        <div class="container">
+            <div class="service-detail__content">
+                <div class="service-detail__image fade-in-left">
+                    <img src="https://placehold.co/800x500/2D5016/FFFFFF?text=Graving" alt="Graving og gravemaskintjenester">
+                </div>
+                <div class="service-detail__text fade-in-right">
+                    <h3>Graving</h3>
+                    <p>Vi har maskiner for alle typer terreng – fra åpne tomter til trange hager. Erfaring med det kuperte landskapet i Hølonda gjør at vi takler de fleste utfordringer.</p>
+                    <ul class="service-detail__list">
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Tomtegraving for hus og hytter
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Grøfter for kabler og rør
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Fundamenter og kjellere
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Hage og uteområder
+                        </li>
+                    </ul>
+                    <span class="service-detail__highlight">Vi har maskiner for alle typer terreng</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service: Veiarbeid -->
+    <section class="service-detail">
+        <div class="container">
+            <div class="service-detail__content">
+                <div class="service-detail__image fade-in-right">
+                    <img src="https://placehold.co/800x500/6B4423/FFFFFF?text=Veiarbeid" alt="Veiarbeid og skogsbilveier">
+                </div>
+                <div class="service-detail__text fade-in-left">
+                    <h3>Veiarbeid</h3>
+                    <p>Gode veier er viktig for både landbruk og skogbruk. Vi bygger og vedlikeholder veier som tåler belastning gjennom hele året.</p>
+                    <ul class="service-detail__list">
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Skogsbilveier og traktorveier
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Private gårdsveier
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Oppgradering og vedlikehold
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Grusing og planering
+                        </li>
+                    </ul>
+                    <span class="service-detail__highlight">Viktig for landbruk og skogbruk i Hølonda</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service: Drenering -->
+    <section class="service-detail">
+        <div class="container">
+            <div class="service-detail__content">
+                <div class="service-detail__image fade-in-left">
+                    <img src="https://placehold.co/800x500/2D5016/FFFFFF?text=Drenering" alt="Drenering">
+                </div>
+                <div class="service-detail__text fade-in-right">
+                    <h3>Drenering</h3>
+                    <p>I Trøndelags nedbørsrike klima er god drenering essensielt. Vi utfører drenering for både landbruk og private boliger.</p>
+                    <ul class="service-detail__list">
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Landbruksdrenering
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Drenering rundt hus og hytter
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Grøfting av myr og våtmark
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Overvannshåndtering
+                        </li>
+                    </ul>
+                    <span class="service-detail__highlight">Essensielt i Trøndelags nedbørsrike klima</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service: Planering -->
+    <section class="service-detail">
+        <div class="container">
+            <div class="service-detail__content">
+                <div class="service-detail__image fade-in-right">
+                    <img src="https://placehold.co/800x500/6B4423/FFFFFF?text=Planering" alt="Planering og terrengarbeid">
+                </div>
+                <div class="service-detail__text fade-in-left">
+                    <h3>Planering</h3>
+                    <p>Jevn og stabil grunn er grunnlaget for alle byggeprosjekter. Vi utfører planering med presisjon for optimalt resultat.</p>
+                    <ul class="service-detail__list">
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Tomteklargjøring
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Terrengforming
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Gårdsplass og parkeringsareal
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Opparbeiding av tun
+                        </li>
+                    </ul>
+                    <span class="service-detail__highlight">Jevnt og fint – klart for bygging</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service: VA-arbeid -->
+    <section class="service-detail">
+        <div class="container">
+            <div class="service-detail__content">
+                <div class="service-detail__image fade-in-left">
+                    <img src="https://placehold.co/800x500/2D5016/FFFFFF?text=VA-arbeid" alt="Vann og avløp">
+                </div>
+                <div class="service-detail__text fade-in-right">
+                    <h3>VA-arbeid</h3>
+                    <p>Vi graver grøfter for vann, avløp og kabler. Viktig infrastruktur som krever nøyaktighet og erfaring.</p>
+                    <ul class="service-detail__list">
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Vann- og avløpsgrøfter
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Stikkledninger
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Kabelgrøfter
+                        </li>
+                    </ul>
+                    <span class="service-detail__highlight">Infrastruktur som fungerer</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service: Massetransport -->
+    <section class="service-detail">
+        <div class="container">
+            <div class="service-detail__content">
+                <div class="service-detail__image fade-in-right">
+                    <img src="https://placehold.co/800x500/6B4423/FFFFFF?text=Massetransport" alt="Massetransport">
+                </div>
+                <div class="service-detail__text fade-in-left">
+                    <h3>Massetransport</h3>
+                    <p>Vi ordner transport av masser, enten det gjelder bortkjøring eller levering av materialer til ditt prosjekt.</p>
+                    <ul class="service-detail__list">
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Transport av jord og stein
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Levering av grus og pukk
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Bortkjøring av masser
+                        </li>
+                    </ul>
+                    <span class="service-detail__highlight">Vi ordner transporten</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service: Snøbrøyting -->
+    <section class="service-detail">
+        <div class="container">
+            <div class="service-detail__content">
+                <div class="service-detail__image fade-in-left">
+                    <img src="https://placehold.co/800x500/2D5016/FFFFFF?text=Snøbrøyting" alt="Snøbrøyting">
+                </div>
+                <div class="service-detail__text fade-in-right">
+                    <h3>Snøbrøyting</h3>
+                    <p>Om vinteren tilbyr vi snøbrøyting for private veier, gårdsplasser og parkeringsplasser. Vi holder det fremkommelig gjennom vinteren.</p>
+                    <ul class="service-detail__list">
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Brøyting av private veier
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Gårdsplasser og parkeringsplasser
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Vintervedlikehold
+                        </li>
+                    </ul>
+                    <span class="service-detail__highlight">Holder det fremkommelig gjennom vinteren</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-header__label">Arbeidsprosess</span>
+                <h2 class="section-header__title">Slik jobber vi</h2>
+                <div class="section-header__line"></div>
+            </div>
+
+            <div class="process-grid">
+                <div class="process-step fade-in stagger-1">
+                    <div class="process-step__number">1</div>
+                    <div class="process-step__content">
+                        <h4>Kontakt</h4>
+                        <p>Ring eller send melding. Vi tar en prat om prosjektet ditt.</p>
+                    </div>
+                </div>
+
+                <div class="process-step fade-in stagger-2">
+                    <div class="process-step__number">2</div>
+                    <div class="process-step__content">
+                        <h4>Befaring</h4>
+                        <p>Vi kommer på befaring for å se området og vurdere omfanget.</p>
+                    </div>
+                </div>
+
+                <div class="process-step fade-in stagger-3">
+                    <div class="process-step__number">3</div>
+                    <div class="process-step__content">
+                        <h4>Tilbud</h4>
+                        <p>Du mottar et tydelig tilbud basert på befaringen.</p>
+                    </div>
+                </div>
+
+                <div class="process-step fade-in stagger-4">
+                    <div class="process-step__number">4</div>
+                    <div class="process-step__content">
+                        <h4>Utførelse</h4>
+                        <p>Arbeidet utføres effektivt til avtalt tid og pris.</p>
+                    </div>
+                </div>
+
+                <div class="process-step fade-in stagger-5">
+                    <div class="process-step__number">5</div>
+                    <div class="process-step__content">
+                        <h4>Ferdig</h4>
+                        <p>Opprydding og ferdigstilling. Du skal være fornøyd.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <div class="container">
+            <div class="fade-in">
+                <h2 class="cta-banner__title">Klar for å komme i gang?</h2>
+                <div class="cta-banner__buttons">
+                    <a href="kontakt.html" class="btn btn--secondary">Ta kontakt</a>
+                    <a href="tel:+4790000000" class="btn btn--outline-dark">Ring 900 00 000</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo__icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 21h16v-2H4v2zm0-4h16v-2H4v2zm0-6h10V5c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v6zm12-6h2l4 4v6h-2v-5l-3-3h-1V5z"/>
+                            </svg>
+                        </div>
+                        <span class="logo__text">Anleggstjenester<span>Grunnarbeid i Melhus</span></span>
+                    </a>
+                    <p class="footer__tagline">Din lokale maskinentreprenør på Hølonda</p>
+                </div>
+
+                <div class="footer__nav">
+                    <h4 class="footer__title">Sider</h4>
+                    <ul class="footer__links">
+                        <li><a href="tjenester.html">Tjenester</a></li>
+                        <li><a href="omrader.html">Områder</a></li>
+                        <li><a href="om-oss.html">Om oss</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__contact">
+                    <h4 class="footer__title">Kontakt</h4>
+                    <p><a href="tel:+4790000000">900 00 000</a></p>
+                    <p><a href="mailto:post@anleggstjenester.no">post@anleggstjenester.no</a></p>
+                    <p>Hølondvegen 2060<br>7212 Korsvegen</p>
+                </div>
+
+                <div class="footer__area">
+                    <h4 class="footer__title">Dekningsområde</h4>
+                    <p>Melhus, Skaun, Orkland, Midtre Gauldal, Trondheim sør</p>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>Org.nr: 936802958</p>
+                <p>&copy; 2025 Anleggstjenester AS. Alle rettigheter reservert.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
